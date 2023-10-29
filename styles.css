@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("https://blogs.opentext.com/wp-content/uploads/2023/08/amc-shutterstock_217119211-1200x675-1-780x470.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#container{
+    width: 100%;
+    background-color: rgb(2, 2, 48);
+    opacity: .83;
+    height: 40rem;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+}
+#logo{
+    height: 2rem;
+    margin-left: 6rem;
+    margin-top: 0.6rem;
+    opacity: 0.9;
+}
+#navbar ul{
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    margin-left: 14rem;
+}
+#navbar li{
+    margin-left: 2rem;
+    font-size: 1.3rem;
+}
+#navbar a{
+    text-decoration: none;
+    color: white;
+}
+#navbar a:hover{
+    color: rgb(56, 28, 131);
+}
+header input{
+    margin-right: 2rem;
+    margin-top: 0.4rem;
+    background-color: coral;
+    width: 10rem;
+    height: 3rem;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+header input:hover{
+    background-color: rgb(236, 10, 10);
+}
+aside{
+    margin-left: 40rem;
+    max-width: 600px;
+}
+#event{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    border-bottom: 1px solid rgb(184, 2, 2);
+}
+#event p{
+    font-size: 1.7rem;
+}
+#event h1{
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+    margin: 0;
+}
+#topic{
+    color: white;
+    font-size: 2.2rem;
+    width: 450px;
+}
+@media only screen and (max-width: 1320px){
+    header input{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    aside{
+        margin-left: 30rem;
+    }
+}
+@media only screen and (max-width: 1073px){
+    #container{
+        height: 45rem;
+    }
+    aside{
+        margin-left:20rem;
+    }
+}
+@media only screen and (max-width: 850px){
+    aside{
+        margin-left: 0;
+    }
+    #navbar{
+        margin-right:  5rem;
+    }
+    #container{
+        height: 48rem;
+    }
+    #event p{
+        font-size: 1rem;
+    }
+
+    #event h1{
+        font-size: 3rem;
+    }
+    #topic{
+        font-size: 1.5rem;
+    }
+}
